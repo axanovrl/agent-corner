@@ -19,8 +19,10 @@ class App extends React.Component{
             <div className = "sign-up">
                 <h1>Create your account</h1>
                 <form>
-                <strong >First name<input className ="label" ></input></strong>
-                    <strong >Last name<input className ="label"  ></input></strong>  
+                    <div className ="container">
+                    <strong >First name<input className ="name" ></input></strong>
+                    <strong >Last name<input className ="name" ></input></strong>  
+                    </div>
                     <strong>Email address <input className ="label"></input></strong>    
                     <strong>Password<input className ="label" type ="password"></input></strong>   
                     <strong>Confirm Password<input className = "label" type ="password"></input></strong>  
