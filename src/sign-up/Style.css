@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+    background-color: #eeeeee;
+    font-family: 'Lato';
+}
+
+.sign-up{
+    margin-left: 530px;
+   
+}
+
+h1{
+    margin-left: 27px;
+    margin-bottom: 40px;
+}
+
+input{
+    margin-bottom: 15px;
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+    outline-color: #d29606;
+    
+    
+}
+
+
+.label{
+    width: 350px;
+    height: 40px;
+    display: flex;
+
+}
+
+button{
+    border-radius: 5px;
+    background-color: #ffb400;
+    width: 353px;
+    height: 50px;
+    font-size: 12pt;
+
+}
+
+button:hover{
+background-color: #d29606;
+}
+
+strong{
+    font-size: 14px;
+}
+
+a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d29606;
+}
+
+hr{
+    width: 333px;
+    margin-left: 0px;
+    
+}
+
+p{
+    font-size: 13px;
+    
+}
+
+#account {
+    
+    margin-left: 50px;
+}
+
