@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Input from './Input';
-import Label from ''
+import Label from './Label'
 
 class App extends React.Component{
 

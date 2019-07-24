@@ -5,3 +5,4 @@ const Label = (props) => {
     return <p>Hello, {name}</p>
 }
 
+export default Label;
