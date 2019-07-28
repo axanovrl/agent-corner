@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import FieldForm from './components/FieldForm';
-import './sign-up/Style.css'
+import './components/Style.css'
 
 
 class App extends React.Component{
