@@ -1,26 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Input from './Input';
-import Label from './Label'
+
+import FieldForm from './components/FieldForm';
+import './components/Style.css'
+
 
 class App extends React.Component{
 
-    constructor (props) {
-        super(props);
-        this.state = {name: " "}
-    }
-
-    handleChange = (e) => {
-        this.setState({name: e.target.value});
-    }
-
-    render() {
+    render (){
         return(
-            <div>
-                <h1>What's your name? </h1>
-                <Input handleChange = {this.handleChange}/>
-                <Label name = {this.state.name}/>
-                </div>
+            <div className="sign-up">
+                <h2>Create your account</h2>
+                <FieldForm/>
+            </div>
         )
     }
 }
