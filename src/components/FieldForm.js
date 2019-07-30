@@ -16,14 +16,14 @@ const FieldForm = (props) => {
             <h2>Create your account</h2>
             <div className="form-row">
             <div className="form-group col">
-              <FieldInput label="First Name" className="form-label" />
+              <FieldInput label="First Name" className="form-label" placeholder="Sam" />
             </div>
             <div className="form-group col">
-              <FieldInput label="Last Name" className="form-label" />
+              <FieldInput label="Last Name" className="form-label" placeholder="Smith"/>
               </div>
             </div>
             <div className="form-group">
-            <FieldInput label="Email" type="email"className="form-label"/>
+            <FieldInput label="Email" type="email"className="form-label" placeholder="sam_smith@gmail.com"/>
             </div>
             <div className="form-group">
             <FieldInput label="Password" type="password" className="form-label font-weigh-bold" />
@@ -38,9 +38,7 @@ const FieldForm = (props) => {
             <a href = "#">Terms of Use</a> and <a href="#">Privacy Policy</a>
             </p>
           </div>
-           
-            </div>
-          
+            </div>         
         </form>
       
      
