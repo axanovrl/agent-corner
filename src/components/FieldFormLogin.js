@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Router, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 import FieldInput from './FieldInput';
 import Logo from './Logo.png'
@@ -7,6 +7,7 @@ import Logo from './Logo.png'
 const FieldFormLogin = (props) =>{
     return(
         <div className="container">
+
             <div className="d-flex justify-content-center align-items-center vh-100">
                 <form className="auth-form">
                     <div className="d-flex justify-content-center mb-3">
@@ -20,7 +21,7 @@ const FieldFormLogin = (props) =>{
                             <label className="form-label">Password</label>
                             <Link to="/forgot-password" className="text-dark font-weight-bold">Forgot Password</Link>
                         </div>
-                        <FieldInput/>
+                            <FieldInput/>
                         <button type="sumbit" className="w-100 btn-spacing-12 mt-2-hf btn btn-primary">Log in</button>
                         <div className="text-center pt-1-hf pb-2-hf">
                             <span>
@@ -28,19 +29,18 @@ const FieldFormLogin = (props) =>{
                                 <Link to="/sign-up"> Sign up</Link>
                             </span>
                         </div>
+
                         <div className="text-center pt-2-hf border-top">
                             <span>
-                            By continuing, you agree to our 
-                            <Link to="/terms"> Terms of Use  </Link>
-                            and
-                            <Link to="/privacy"> Privacy Policy</Link>
+                                By continuing, you agree to our 
+                                <Link to="/terms"> Terms of Use  </Link>
+                                and
+                                <Link to="/privacy"> Privacy Policy</Link>
                             </span>
                         </div>
-                      
                     </div>
                 </form>
             </div>
-
         </div>
     )
 
