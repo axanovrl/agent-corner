@@ -3,7 +3,7 @@
 html {
     background-color: #eaeaea;
     font-family: 'Lato';
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h2{
@@ -47,8 +47,6 @@ input{
     
 }
 
-
-
 button{
     border-radius: 5px;
     border: 1px solid transparent;
@@ -64,7 +62,6 @@ button:hover{
 background-color: #d29606;
 }
 
-
 a {
     color: #ffb400;
     text-decoration: none;
@@ -77,8 +74,7 @@ a:hover{
 
 hr{
     width: 395px;
-    margin-left: 0px;
-    
+    margin-left: 0px; 
 }
 
 p{
@@ -107,7 +103,7 @@ span{
 height: 100vh!important;
 }
 
-.align-items{
+.align-items-center{
     align-items: center;
 
 }

@@ -2,14 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Link } from "react-router-dom";
 
-
-
 import FieldInput from './FieldInput';
 
 const FieldForm = (props) => {
   
     return(
-      
         <form>
           <div className="d-flex justify-content-center">
             <div className="wizard-form">
@@ -23,13 +20,13 @@ const FieldForm = (props) => {
               </div>
             </div>
             <div className="form-group">
-            <FieldInput label="Email" type="email"className="form-label" placeholder="sam_smith@gmail.com"/>
+              <FieldInput label="Email" type="email"className="form-label" placeholder="sam_smith@gmail.com"/>
             </div>
             <div className="form-group">
-            <FieldInput label="Password" type="password" className="form-label font-weigh-bold" />
+              <FieldInput label="Password" type="password" className="form-label font-weigh-bold" />
             </div>
             <div className="form-group">
-            <FieldInput label="Confirm Password" type="password" className="form-label"/> 
+              <FieldInput label="Confirm Password" type="password" className="form-label"/> 
             </div>
             <button type="submit">Sign Up</button>
             <p>Already have an account? <Link to="/login">Sign in instead</Link></p>
@@ -40,9 +37,6 @@ const FieldForm = (props) => {
           </div>
             </div>         
         </form>
-      
-     
-       
     )
 }
 
