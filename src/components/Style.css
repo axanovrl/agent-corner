@@ -216,10 +216,63 @@ label{
 
 .mb-2-hf{
     margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .form-text{
     display: block;
     margin-top: 0.625rem;
     font-size: 14px;
+}
+
+.bg-dark {
+    background-color: #030303!important;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar>.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+flex-grow: 1;
+align-items: center;
+}
+
+.nav-link{
+    display: block;
+}
+
+.container-table{
+    height: 535px;
+}
+
+.overflow-auto{
+    overflow: auto;
+}
+
+.bg-light{
+    background-color: #eaeaea;
+}
+
+.control {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+
+.table tr{
+    background-color: #fff;
 }

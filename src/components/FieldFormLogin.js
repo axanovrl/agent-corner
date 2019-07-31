@@ -4,7 +4,7 @@ import {Link } from "react-router-dom";
 import FieldInput from './FieldInput';
 import Logo from './Logo.png'
 
-const FieldFormLogin = (props) =>{
+const FieldFormLogin = () =>{
     return(
         <div className="container">
 
