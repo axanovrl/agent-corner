@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Logo from './logo1.png'
 import Photo from './Photo.png'
 
-const FieldFormDashboard = () => {
+const FieldFormContacts = () => {
     return(
         <React.Fragment>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -50,7 +50,7 @@ const FieldFormDashboard = () => {
                                 <tbody>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -69,7 +69,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -88,7 +88,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -107,7 +107,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -126,7 +126,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -145,7 +145,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -164,7 +164,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -183,7 +183,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -202,7 +202,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -221,7 +221,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -240,7 +240,7 @@ const FieldFormDashboard = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td>Jeffery Fox</td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -277,4 +277,4 @@ const FieldFormDashboard = () => {
 
 
 
-export default FieldFormDashboard;
+export default FieldFormContacts;
