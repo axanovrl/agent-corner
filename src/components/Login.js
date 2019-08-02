@@ -7,8 +7,7 @@ import FieldForm from './FieldForm';
 
 const Login = () =>{
     return(
-        
-        
+
         <div className="container">
             <div className="d-flex justify-content-center align-items-center vh-100">
                 <form className="auth-form">
