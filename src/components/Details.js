@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Logo from './logo1.png'
 import Avatar from './avatar_0.png'
 
-const FieldFormDetails = () =>{
+const Details = () =>{
     return(
         <React.Fragment>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -189,4 +189,4 @@ const FieldFormDetails = () =>{
     )
 }
 
-export default FieldFormDetails;
+export default Details;
