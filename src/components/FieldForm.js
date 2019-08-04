@@ -3,11 +3,10 @@ import {Link } from "react-router-dom";
 
 import FieldInput from './FieldInput';
 
-const FieldForm = ({h2, button}) => {
+const FieldForm = ({h2, button, div}) => {
   
     return(
         <form>
-    
           <div className="d-flex justify-content-center">
             <div className="wizard-form">
             <h2>{h2}</h2>

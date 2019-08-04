@@ -9,7 +9,7 @@ const SignUp = () =>{
     return(
  
             <React.Fragment>
-            <FieldForm h2="Create your account" button="Sign Up" />
+            <FieldForm h2="Create your account" button="Sign Up"/>
             </React.Fragment>
       
              

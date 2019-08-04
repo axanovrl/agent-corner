@@ -3,12 +3,10 @@ import {Link } from "react-router-dom";
 
 import FieldInput from './FieldInput';
 import Logo from './Logo.png'
-import FieldForm from './FieldForm';
+
 
 const Login = () =>{
     return(
-        
-        
         <div className="container">
             <div className="d-flex justify-content-center align-items-center vh-100">
                 <form className="auth-form">
@@ -43,11 +41,7 @@ const Login = () =>{
                     </div>
                 </form>
             </div>
-        </div>
-       
-        
-        
-        
+        </div>   
     )
 
 }

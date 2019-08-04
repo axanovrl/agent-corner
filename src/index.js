@@ -23,7 +23,8 @@ class App extends React.Component{
                         
                     </div>
                     <Route path="/contacts" component={Contacts}/>
-                    <Route path="/details" component={Details}/>
+                    <Route path="/details/" component={Details}/>
+                
                     
                 </BrowserRouter>
               

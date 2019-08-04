@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import Logo from './logo1.png'
 import Photo from './Photo.png'
+import AvatarMini from './avatar_0.png'
 
 const Contacts = () => {
     return(
@@ -16,13 +17,28 @@ const Contacts = () => {
                             <Link to="/contacts" className="text-white nav-link">Contacts</Link>
                             <Link to="/campaigns" className="text-white nav-link">Campaigns</Link>
                         </div>
-                </div>
+                    <div className="navbar-nav">
+                        <div className="dropdown nav-item">
+                                    <a aria-haspopup="true" aria-expanded="false" href="#" data-toggle="dropdown" className="dropdown-toggle nav-link" role="button" >
+                                        <img className="rounded-circle" id="h-mini-avatar" src={AvatarMini} width="30" height="30"/>
+                                        <span className="text-white">Jeffery</span>
+                                    </a>
+                                <div className="dropdown-menu" aria-labelledby>
+                                        <Link className="dropdown-item" to="/settings">Settings</Link>
+                                        <Link className="dropdown-item" to="/new-contact">Create a new contact</Link>
+                                        <div className="dropdown-divider" role="separator"></div>
+                                        <Link className="dropdown-item" to="#">Log out</Link>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>  
             </nav>
             <div className="container">
                     <div className="mb-2-hf d-flex justify-content-between flex-wrap">
                         <h2>Contacts</h2>
                     </div>
+     
                     <div className="mb-2-hf">
                         <div className="overflow-auto table-hover table-bordered container-table bg-light">
                             <table className="table contacts table-hover table-bordered">
@@ -88,7 +104,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -107,7 +123,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -126,7 +142,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -145,7 +161,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -164,7 +180,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -183,7 +199,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -202,7 +218,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -221,7 +237,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
@@ -240,7 +256,7 @@ const Contacts = () => {
                                     </tr>
                                     <tr>
                                         <td><img src={Photo} width="140px" height="80px"/></td>
-                                        <td><Link to="/contacts/details" className="text-dark text-underline">Jeffery Fox</Link></td>
+                                        <td><Link to="/details" className="text-dark text-underline">Jeffery Fox</Link></td>
                                         <td>123456</td>
                                         <td>San Francisco, CA</td>
                                         <td>$450,000-$500,000</td>
