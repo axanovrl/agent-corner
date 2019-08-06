@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import DropdownNav from '../../DropdownNav';
-
+// Сделай нормально страницу, раздели но компоненты
 const FieldDetails = () =>{
     return(
         <React.Fragment>

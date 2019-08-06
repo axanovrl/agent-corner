@@ -2,8 +2,8 @@ import React from 'react';
 
 import FieldInput from '../../../components/FieldInput';
 
-const AccountInfo = () => {
-
+const AccountInfoForm = () => {
+    // Исправь тут
     return(
         <form className="form-default">
             <div>
