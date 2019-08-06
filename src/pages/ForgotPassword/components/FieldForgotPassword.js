@@ -1,11 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import FieldInput from '../../../components/FieldInput';
 
-import Logo from './Logo.png'
-import FieldInput from './FieldInput';
 
-const ForgotPassword = (props) =>{
+const FieldForgotPassword = () =>{
 
     return(
         
@@ -13,7 +12,7 @@ const ForgotPassword = (props) =>{
                 <div className ="d-flex justify-content-center align-items-center vh-100">
                     <form className="auth-form">
                     <div className="d-flex justify-content-center mb-2">
-                        <img src={Logo} className="ac-logo" alt="logo"/>
+                        <img src="/img/Logo.png" className="ac-logo" alt="logo"/>
                     </div>
                     <h2 className="text center mb-2-hf">Reset your password</h2>
                     <div className="form-group">
@@ -22,7 +21,7 @@ const ForgotPassword = (props) =>{
                         Enter the email associated with your Agent’s Corner account and we'll send you instructions to reset your password.
                         </span>
                     </div>
-                    <button type="submit" className="w-100 btn-spacing-12 mt-2-hf btn btn-primary">Sumbit</button>
+                    <button type="submit">Submit</button>
                     <div className="text-center pt-1-hf pb-2-hf"> 
                         <span>
                             Go back to
@@ -37,4 +36,4 @@ const ForgotPassword = (props) =>{
 
 }
 
-export default ForgotPassword;
+export default FieldForgotPassword;
