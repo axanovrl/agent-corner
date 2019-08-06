@@ -22,7 +22,7 @@ const FieldFormLogin = (props) =>{
                             <Link to="/forgot-password" className="text-dark font-weight-bold">Forgot Password</Link>
                         </div>
                             <FieldInput/>
-                        <button type="sumbit" className="w-100 btn-spacing-12 mt-2-hf btn btn-primary">Log in</button>
+                        <button type="submit" className="w-100 btn-spacing-12 mt-2-hf btn btn-primary">Log in</button>
                         <div className="text-center pt-1-hf pb-2-hf">
                             <span>
                                 Don't have an account?
