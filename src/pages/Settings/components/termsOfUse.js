@@ -47,7 +47,7 @@ const TermsOfUse = () => {
             We will not hesitate to take legal action against any unauthorised usage of its trade marks, name or 
             symbols to preserve and protect its rights in the matter. All rights not expressly granted herein 
             are reserved. Other product and company names mentioned herein may also be the trade marks of their 
-            respective owners.
+            gitrespective owners.
             </p>
         </div>
     )
