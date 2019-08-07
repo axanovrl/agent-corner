@@ -30,7 +30,6 @@ const TabPanel = () =>{
           <AccountInfo/>
         </Tab.Pane>
         <Tab.Pane eventKey="payment">
-          
         </Tab.Pane>
         <Tab.Pane eventKey="termsOfUse">
           <TermsOfUse/>
