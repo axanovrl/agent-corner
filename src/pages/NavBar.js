@@ -9,7 +9,7 @@ const NavBar = () =>{
   <Navbar bg="dark" expand="lg" variant ="dark">
       <div className="container">
     <Navbar.Brand href="/dashboard"><img src="/img/logo1.png" width="42" height="42"></img></Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
         <Nav.Link href="/dashboard">Dashboard</Nav.Link>

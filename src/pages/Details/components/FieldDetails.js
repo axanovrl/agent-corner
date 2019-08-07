@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import DropdownNav from '../../DropdownNav';
 import NavBar from '../../NavBar';
+import FieldLabel from './FieldLabel';
+import FieldListGroupItem from './FieldListGroupItem';
 
 const FieldDetails = () =>{
     return(
@@ -24,26 +26,10 @@ const FieldDetails = () =>{
                                         <div className="d-flex">
                                             <h6 className="ac-text-16 font-weight-bold">About</h6>
                                             <ul className="list-about-user">
-                                                <li>
-                                                    <label className="text-secondary">Phone Number</label>
-                                                    <p>(415) 123-4567</p>
-                                                </li>
-                                                <li>
-                                                    <label className="text-secondary">Email</label>
-                                                    <p>jfox@gmail.com</p>
-                                                </li>
-                                                <li>
-                                                    <label className="text-secondary">Objective</label>
-                                                    <p>Objective</p>
-                                                </li>
-                                                <li>
-                                                    <label className="text-secondary">Lifecycle Stage</label>
-                                                    <p>New</p>
-                                                </li>
-                                                <li>
-                                                    <label className="text-secondary">Contact Status</label>
-                                                    <p>New</p>
-                                                </li>
+                                                <FieldLabel label="Email" className="text-secondary" p="jfox@gmail.com"/>
+                                                <FieldLabel label="Objective" className="text-secondary" p="Objective"/>
+                                                <FieldLabel label="Lifecycle Stage" className="text-secondary" p="New"/>
+                                                <FieldLabel label="Contact Status" className="text-secondary" p="New"/>
                                             </ul>
                                         </div>
                                     </div>
@@ -59,34 +45,14 @@ const FieldDetails = () =>{
                                                 <div className="card-body">
                                                     <div className="list-group">
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">City</label>
-                                                            <span>San Francisco</span>
-                                                            </div>
-                                                        </div>
-                                                    
-                                                    
+                                                            <FieldListGroupItem label="State" span="California" className="d-flex justify-content-between font-weight-bold"/>
+                                                    </div>
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">State</label>
-                                                            <span>California</span>
-                                                            </div>
+                                                            <FieldListGroupItem label="Zip Code" span="456908" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
-                                                  
-                                                    
+                                        
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">ZIP CODE</label>
-                                                            <span>1234567</span>
-                                                            </div>
-                                                        </div>
-                                                 
-                                                   
-                                                        <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Property Type</label>
-                                                            <span>Any Type</span>
-                                                            </div>
+                                                            <FieldListGroupItem label="Property Type" span="Property" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -100,37 +66,21 @@ const FieldDetails = () =>{
                                                 <div className="card-body">
                                                     <div className="list-group">
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Objective</label>
-                                                            <span>Buyer</span>
-                                                            </div>
+                                                            <FieldListGroupItem label="Objective" span="Buyer" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
-                                                   
-                                                   
+
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Estimated Price</label>
-                                                            <span>$450,000-$500,000</span>
-                                                            </div>
+                                                                <FieldListGroupItem label="Estimated Price" span="$450,000-$500,000" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
-                                               
-                                                 
+
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Down Payment</label>
-                                                            <span>15%</span>
-                                                            </div>
+                                                                <FieldListGroupItem label="Down Payment" span="15%" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
-                                                   
-                                                    
+
                                                         <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Timeframe</label>
-                                                            <span>ASAP</span>
-                                                            </div>
+                                                                <FieldListGroupItem label="Time Frame" span="ASAP" className="d-flex justify-content-between font-weight-bold"/>
                                                         </div>
                                                         </div>
-                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -140,35 +90,22 @@ const FieldDetails = () =>{
                                                 <h6 className="ac-text-16 font-weight-bold text-white">Other Info</h6>
                                                 </div>
                                                 <div className="card-body">
-                                                    
-                                                        <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">First Time Buyer</label>
-                                                            <span>Yes</span>
-                                                            </div>
-                                                        </div>
-                                                   
-                                                    
-                                                        <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Other Info</label>
-                                                            <span className="text-success">Good</span>
-                                                            </div>
-                                                        </div>
-                                                    
-                                                    
-                                                        <div className="list-group-item">
-                                                            <div className="d-flex justify-content-between">
-                                                            <label class="font-weight-bold">Veteran Status</label>
-                                                            <span>I'm not Veteran</span>
-                                                            </div>
-                                                        </div>
-                                                    
+
+                                                    <div className="list-group-item">
+                                                        <FieldListGroupItem label="First Time Buyer" span="Yes" className="d-flex justify-content-between font-weight-bold"/>
+                                                    </div>
+                               
+                                                    <div className="list-group-item">
+                                                        <FieldListGroupItem label="Other Info"  span ="Good" className="d-flex justify-content-between font-weight-bold"/>
+                                                    </div>
+
+                                                    <div className="list-group-item">
+                                                        <FieldListGroupItem label="Veteran Status" span="I'm not a Veteran" className="d-flex justify-content-between font-weight-bold"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                
                             </div>
                         </div>
                     </div>

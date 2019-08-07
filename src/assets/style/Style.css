@@ -491,3 +491,6 @@ li{
     font-size: 0.95em;
     text-align: justify;
 }
+.navbar-toggler{
+    width: 50px;
+}
