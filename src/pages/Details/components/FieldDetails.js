@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import DropdownNav from '../../DropdownNav';
 import NavBar from '../../NavBar';
 import FieldLabel from './FieldLabel';
 import FieldListGroupItem from './FieldListGroupItem';

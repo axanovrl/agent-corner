@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TermsOfUse = () => {
+const TermsOfUseForm = () => {
 
     return(
         <div className="container-fluid">
@@ -53,4 +53,4 @@ const TermsOfUse = () => {
     )
 }
 
-export default TermsOfUse;
+export default TermsOfUseForm;

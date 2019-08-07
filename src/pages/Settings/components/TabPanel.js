@@ -1,8 +1,8 @@
 import React from 'react';
 import {Tab, Row, Col, Nav} from 'react-bootstrap';
 
-import AccountInfo from './accountInfo';
-import TermsOfUse from './termsOfUse';
+import AccountInfoForm from './accountInfoForm';
+import TermsOfUseForm from './termsOfUseForm';
 
 const TabPanel = () =>{
     return(
@@ -27,12 +27,12 @@ const TabPanel = () =>{
     <Col sm={10}>
       <Tab.Content>
         <Tab.Pane eventKey="accountInfo">
-          <AccountInfo/>
+          <AccountInfoForm/>
         </Tab.Pane>
         <Tab.Pane eventKey="payment">
         </Tab.Pane>
         <Tab.Pane eventKey="termsOfUse">
-          <TermsOfUse/>
+          <TermsOfUseForm/>
         </Tab.Pane>
       </Tab.Content>
     </Col>

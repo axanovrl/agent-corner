@@ -2,7 +2,7 @@ import React from 'react';
 
 import FieldInput from '../../../components/FieldInput';
 
-const AccountInfo = () => {
+const AccountInfoForm = () => {
 
     return(
         <form className="form-default">
@@ -95,4 +95,4 @@ const AccountInfo = () => {
     )
 }
 
-export default AccountInfo;
+export default AccountInfoForm;
