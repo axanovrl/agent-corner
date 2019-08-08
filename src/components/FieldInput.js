@@ -1,11 +1,12 @@
 import React from 'react';
 
-const FieldInput = ({type="text", label, className, placeholder}) =>{
+const FieldInput = ({type="text", label, className, placeholder,value, p}) =>{
     
     return(
         <div className = {className}>
             <label>{label}</label>  
-            <input type={type} className={className} placeholder={placeholder}/>
+            <p>{p}</p>
+            <input type={type} className={className} placeholder={placeholder} value={value}/>
         </div>
     )
 }
