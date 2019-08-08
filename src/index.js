@@ -24,7 +24,8 @@ class App extends React.Component{
                         <Route path="/forgot-password" component={FieldForgotPassword}/>
                         
                     </div>
-                    <Route path="/contacts" component={Contacts}/>
+                    <Route path="/contacts" component={Contacts} exact={true}/>
+                    <Route path="/contacts:id" component={Details} exact={true}/>
                     <Route path="/details" component={Details}/>
                     <Route path="/settings" component={Settings}/>
                 
