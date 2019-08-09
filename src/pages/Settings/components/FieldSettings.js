@@ -1,8 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-import DropdownNav from '../../DropdownNav';
-import NavBar from '../../NavBar';
+import NavBar from '../../../components/NavBar';
 import TabPanel from './TabPanel';
 
 const FieldSettings = () =>{
