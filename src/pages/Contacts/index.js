@@ -1,10 +1,10 @@
 import React from 'react';
 
-import FieldContacts from './components/FieldContacts'
+import Contacts from './components/Contacts'
 
 const index = () =>{
     return(
-        <FieldContacts/>
+        <Contacts/>
     )
 }
 
