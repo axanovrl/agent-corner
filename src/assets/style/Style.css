@@ -192,6 +192,11 @@ label{
     background-color:#ffb400;
     border-color: #ffb400;
 }
+.btn-primary:hover {
+    color: #212529;
+    background-color: #d29606;
+    border-color: #d29606;
+}
 
 .w-100{
     width: 100%;
@@ -493,4 +498,23 @@ li{
 }
 .navbar-toggler{
     width: 50px;
+}
+
+.py-2{
+    padding-bottom: 2rem!important;
+}
+
+.add-btn{
+   padding: 15px 30px;
+}
+
+.oval {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.oval-success {
+    background-color: #68bb6c;
+    margin-right: 10px;
 }

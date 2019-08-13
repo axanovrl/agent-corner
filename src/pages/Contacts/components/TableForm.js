@@ -9,6 +9,7 @@ const TableForm = (className) =>{
              <div className={`mb-2-hf d-flex justify-content-between flex-wrap ${className}`}>
                 <h2>Contacts</h2>
             </div>
+            <Link to="#" className="font-weight-bold add-btn btn btn-primary">+ Create</Link>
                         <div className={`mb-2-hf ${className}`}>
                             <div className={`overflow-auto table-bordered container-table bg-light ${className}`}>
                             <Table striped bordered hover>
@@ -20,17 +21,6 @@ const TableForm = (className) =>{
                                             <th scope="col">CITY&STATE</th>
                                             <th scope="col">ESTIMATED PRICE</th>
                                             <th scope="col">DATE CREATED</th>
-                                            <th scope="col">PROPERTY TYPE</th>
-                                            <th scope="col">NAME</th>
-                                            <th scope="col">BEDS</th>
-                                            <th scope="col">BATHS</th>
-                                            <th scope="col">EMAIL</th>
-                                            <th scope="col">PHONE</th>
-                                            <th scope="col">LAST CONTACTED</th>
-                                            <th scope="col">CREDIT RANGE</th>
-                                            <th scope="col">STAGE</th>
-                                            <th scope="col">STATUS</th>
-                                            <th scope="col">DOWN PAYMENT</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -41,17 +31,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png" width="140px" height="80px"/></td>
@@ -60,17 +39,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png" width="140px" height="80px"/></td>
@@ -79,17 +47,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png" width="140px" height="80px"/></td>
@@ -98,17 +55,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -117,17 +63,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -136,17 +71,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -155,17 +79,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -174,17 +87,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -193,17 +95,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -212,17 +103,6 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
                                         </tr>
                                         <tr>
                                             <td><img src="/img/Photo.png"  width="140px" height="80px"/></td>
@@ -231,17 +111,7 @@ const TableForm = (className) =>{
                                             <td>San Francisco, CA</td>
                                             <td>$450,000-$500,000</td>
                                             <td>May 1, 2019</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
-                                            <td>---</td>
+                                           
                                         </tr>
                                     </tbody>
                                 </Table>
