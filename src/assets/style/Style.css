@@ -78,8 +78,8 @@ a:hover{
 }
 
 hr{
-    width: 395px;
-    margin-left: 0px; 
+    border: 0;
+    border-top: 1px solid rgba(3,3,3,.1);
 }
 
 p{
@@ -189,13 +189,13 @@ label{
 
 .btn-primary{
     color: #212529;
-    background-color:#ffb400;
-    border-color: #ffb400;
+    background-color:#ffb400!important;;
+    border-color: #ffb400!important;;
 }
 .btn-primary:hover {
     color: #212529;
-    background-color: #d29606;
-    border-color: #d29606;
+    background-color: #d29606!important;
+    border-color: #d29606!important;;
 }
 
 .w-100{
@@ -517,4 +517,33 @@ li{
 .oval-success {
     background-color: #68bb6c;
     margin-right: 10px;
+}
+
+.p-2{
+    padding: 2rem!important;
+}
+
+.panel-form{
+    max-width: 750px;
+    width: 100%;
+}
+
+#campaigns-form{
+    max-width: 360px;
+    width: 100%;
+}
+
+.line{
+    border:0;
+    border-top: 1px solid rgb(217,217,217);
+}
+
+.text-muted{
+    color: #1f1f1f!important;
+    font-size: 0.75em;
+}
+
+.btn-spacing-295 {
+    padding-right: 29.5px;
+    padding-left: 29.5px;
 }

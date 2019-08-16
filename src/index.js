@@ -10,6 +10,7 @@ import Contacts from './pages/Contacts/index';
 import Details from './pages/Details/index';
 import Settings from './pages/Settings/index';
 import Campaigns from './pages/Campaigns/index';
+import CreateCampaign from './pages/Campaigns/components/CreateCampaign';
 import Style from './assets/style/Style.css';
 
 
@@ -28,7 +29,8 @@ class App extends React.Component{
                     <Route path="/contacts:id" component={Details} exact={true}/>
                     <Route path="/details" component={Details}/>
                     <Route path="/settings" component={Settings}/>
-                    <Route path="/campaigns" component={Campaigns}/>
+                    <Route path="/campaigns" component={Campaigns} exact={true}/>
+                    <Route path="/campaigns/add" component={CreateCampaign} exact={true}/>
                 
                     
                 </BrowserRouter>
