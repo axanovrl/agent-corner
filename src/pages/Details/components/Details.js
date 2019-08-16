@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavBar from '../../NavBar';
+import NavBar from '../../../components/NavBar';
 import ListBlock from './ListBlock';
 import ContactInfo from './ContactInfo';
 import {List, List1, List2} from '../const';
