@@ -10,7 +10,7 @@ import Contacts from './pages/Contacts/index';
 import Details from './pages/Details/index';
 import Settings from './pages/Settings/index';
 import Campaigns from './pages/Campaigns/index';
-import CreateCampaign from './pages/Campaigns/components/CreateCampaign';
+import CreateCampaign from './pages/CreateCampaigns/index';
 import Style from './assets/style/Style.css';
 
 
