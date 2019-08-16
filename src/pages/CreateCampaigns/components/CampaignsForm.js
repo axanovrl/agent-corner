@@ -1,7 +1,7 @@
 import React from 'react';
 import {Form, Col} from 'react-bootstrap';
 
-const FormCreateCampaign = () =>{
+const CampaignsForm = () =>{
     return (
    
         <Form id="campaigns-form" className="form-default">
@@ -96,4 +96,4 @@ const FormCreateCampaign = () =>{
             
     )
 }
-export default FormCreateCampaign;
+export default CampaignsForm;

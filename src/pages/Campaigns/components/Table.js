@@ -1,11 +1,11 @@
 import React from 'react';
-import {Table} from 'react-bootstrap';
+import { Table as BTable } from 'react-bootstrap';
 
-const TableCampaigns = (className) =>{
+const Table = (className) => {
     return (
         <div className={`overflow-auto container-table ${className}`}>
-            <Table bordered hover >
-                    <thead>
+            <BTable bordered hover >
+                <thead>
                     <tr>
                         <th>CAMPAIGNS NAME</th>
                         <th>ACTIONS</th>
@@ -13,8 +13,8 @@ const TableCampaigns = (className) =>{
                         <th>BID AMOUNT</th>
                         <th>WEEKLY BUDGET</th>
                     </tr>
-                    </thead>
-                    <tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>Campaign Name</td>
                         <td>
@@ -171,11 +171,11 @@ const TableCampaigns = (className) =>{
                         <td>$10.50</td>
                         <td>$210.00</td>
                     </tr>
-                    </tbody>
-                </Table>
+                </tbody>
+            </BTable>
         </div>
-        
+
     )
 }
 
-export default TableCampaigns;
+export default Table;
