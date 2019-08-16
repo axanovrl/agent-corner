@@ -5,7 +5,7 @@ import ListBlock from './ListBlock';
 import ContactInfo from './ContactInfo';
 import {List, List1, List2} from '../const';
 
-const FieldDetails = () =>{
+const Details = () =>{
     return(
         <React.Fragment>
             <NavBar/>
@@ -32,4 +32,4 @@ const FieldDetails = () =>{
     )
 }
 
-export default FieldDetails;
+export default Details;

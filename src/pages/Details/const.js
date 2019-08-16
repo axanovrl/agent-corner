@@ -2,7 +2,29 @@ export const List = [
     {
         label: "Property Type",
         span: "Any Type",
+    },
+
+    {
+        label: "Country",
+        span: "USA"
+    },
+
+    {
+        label: "City",
+        span: "San Francisco"
+    },
+
+    {
+        label: "State",
+        span: "CA"
+    },
+
+    {
+        label: "Phone Number",
+        span: "+123456789"
     }
+
+
 
 ]
 
@@ -19,7 +41,7 @@ export const List1 = [
 
 {
     label: "Time Frame",
-    span: ""
+    span: "Any Time"
 },
 
 ]

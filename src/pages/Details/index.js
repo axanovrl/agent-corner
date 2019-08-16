@@ -1,12 +1,12 @@
 import React from 'react';
 
-import FieldDetails from './components/Details';
+import Details from './components/Details';
 
 
 const index = () =>{
 
     return(
-        <FieldDetails/>
+        <Details/>
     )
 }
 
