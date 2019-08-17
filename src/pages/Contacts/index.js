@@ -9,14 +9,12 @@ const index = () => {
         <React.Fragment>
             <NavBar />
             <Container>
-               
                     <div className="mb-2-hf d-flex justify-content-between flex-wrap">
                         <h2>Contacts</h2>
                     </div>
                     <div className="mb-2-hf">
-                        <Table />
+                        <Table/>
                     </div>
-              
             </Container>
         </React.Fragment>
 

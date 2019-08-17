@@ -9,8 +9,9 @@ import FieldForgotPassword from './pages/ForgotPassword/index'
 import Contacts from './pages/Contacts/index';
 import Details from './pages/Details/index';
 import Settings from './pages/Settings/index';
-import Style from './assets/style/Style.css'
-
+import Campaigns from './pages/Campaigns/index';
+import CreateCampaign from './pages/CreateCampaigns/index';
+import Style from './assets/style/Style.css';
 
 
 class App extends React.Component{
@@ -28,6 +29,8 @@ class App extends React.Component{
                     <Route path="/contacts:id" component={Details} exact={true}/>
                     <Route path="/details" component={Details}/>
                     <Route path="/settings" component={Settings}/>
+                    <Route path="/campaigns" component={Campaigns} exact={true}/>
+                    <Route path="/campaigns/add" component={CreateCampaign} exact={true}/>
                 
                     
                 </BrowserRouter>

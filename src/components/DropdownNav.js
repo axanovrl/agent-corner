@@ -12,7 +12,6 @@ const DropdownNav = () => {
               </Link>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="">
               <Link to="/settings" className="dropdown-item" >Settings</Link>
-              <Link to="/new-contact" className="dropdown-item" >Create a new contact</Link>
               <div className="dropdown-divider" role="separator"></div>
               <Link to="#" className="dropdown-item" >Log out</Link>
             </div>
