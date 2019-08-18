@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import NavBar from '../../../components/NavBar';
-import TableCampaigns from './TableCampaigns';
+import Table from './Table';
 
 const Campaigns = () =>{
 
@@ -15,7 +15,7 @@ const Campaigns = () =>{
                     </div>
                     <Link to="campaigns/add" className="font-weight-bold add-btn btn btn-primary">+ Create</Link>
                    <div className="mb-2-hf">
-                    <TableCampaigns/>
+                    <Table/>
                    </div>
                 </div>  
             </React.Fragment>
