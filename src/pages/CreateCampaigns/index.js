@@ -1,15 +1,15 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-import NavBar from '../../../components/NavBar';
-import FormCreateCampaign from './FormCreateCampaign';
+import NavBar from '../../components/NavBar';
+import CampaignsForm from './components/CampaignsForm';
 
-
-const CreateCampaign = () =>{
+const index = () => {
     return (
         <React.Fragment>
-            <NavBar/>
-            <div className="container">
+            <NavBar />
+            <Container>
                 <div className="mb-2-hf d-flex justify-content-between flex-wrap">
                     <h2>Recurring Campaign</h2>
                 </div>
@@ -19,14 +19,13 @@ const CreateCampaign = () =>{
                         <button id="back" type="button" className="rounded-0 btn btn-dark"><Link to="/campaigns" className="text-white">Back</Link></button>
                         <h2 className="h2 text-center mb-3">What’s your contact objective?</h2>
                         <div className="d-flex justify-content-center">
-                            <FormCreateCampaign/>
+                            <CampaignsForm />
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </React.Fragment>
-       
     )
 }
 
-export default CreateCampaign; 
+export default index;
