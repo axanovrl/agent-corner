@@ -3,6 +3,8 @@ import {Tab, Row, Col, Nav} from 'react-bootstrap';
 
 import AccountInfoForm from './accountInfoForm';
 import TermsOfUseForm from './termsOfUseForm';
+import PaymentForm from './paymentForm';
+import PrivacyPolicyForm from './privacyPolicyForm';
 
 const TabPanel = () =>{
     return(
@@ -30,9 +32,13 @@ const TabPanel = () =>{
           <AccountInfoForm/>
         </Tab.Pane>
         <Tab.Pane eventKey="payment">
+          <PaymentForm/>
         </Tab.Pane>
         <Tab.Pane eventKey="termsOfUse">
           <TermsOfUseForm/>
+        </Tab.Pane>
+        <Tab.Pane eventKey="privacyPolicy">
+          <PrivacyPolicyForm/>
         </Tab.Pane>
       </Tab.Content>
     </Col>

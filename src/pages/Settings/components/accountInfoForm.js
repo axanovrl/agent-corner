@@ -14,17 +14,17 @@ const AccountInfoForm = () => {
                 <Col md={8} className="mr-1">
                     <Form.Row>
                         <Col className="mr-1">
-                            <Form.Group as={Col} className="p-0">
+                            <Form.Group className="p-0">
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email" disabled placeholder="email@company.com"></Form.Control>
                             </Form.Group>
-                            <Form.Group as={Col} className="p-0">
+                            <Form.Group className="p-0">
                                 <Form.Label>Old Password</Form.Label>
                                 <Form.Control type="password"></Form.Control>
                             </Form.Group>
                         </Col>
                         <Col className="mr-1">
-                            <Form.Group as={Col} className="p-0">
+                            <Form.Group className="p-0">
                                 <Form.Label className="mt-new-password">New Password</Form.Label>
                                 <Form.Control type="password" ></Form.Control>
                             </Form.Group>

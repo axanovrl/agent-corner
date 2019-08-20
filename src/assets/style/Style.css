@@ -487,6 +487,7 @@ li{
 
 .ac-text-small{
     font-size: .8rem;
+   
 }
 
 .button-default{
@@ -561,4 +562,9 @@ li{
 
 .btn-link:hover{
     color: #d29606;
+}
+
+.privacy-pol{
+    font-size: 0.95em;
+    text-align: justify;
 }
