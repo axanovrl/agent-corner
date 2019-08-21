@@ -21,13 +21,13 @@ const ContactInfo = () =>{
                 <div className="ag-p-20">
                     <div className="d-flex">
                         <h6 className="ac-text-16 font-weight-bold">About</h6>
-                        <ul className="list-about-user">
-                            <FieldLabel label="Email" className="text-secondary" p="jfox@gmail.com"/>
-                            <FieldLabel label="Objective" className="text-secondary" p="Objective"/>
-                            <FieldLabel label="Lifecycle Stage" className="text-secondary" p="New"/>
-                            <FieldLabel label="Contact Status" className="text-secondary" p="New"/>
-                        </ul>
                     </div>
+                        <ul className="list-about-user">
+                                <FieldLabel label="Email" p="jfox@gmail.com"/>
+                                <FieldLabel label="Objective" p="Objective"/>
+                                <FieldLabel label="Lifecycle Stage" p="New"/>
+                                <FieldLabel label="Contact Status"p="New"/>
+                        </ul>
                     </div>
                 </div>
     )

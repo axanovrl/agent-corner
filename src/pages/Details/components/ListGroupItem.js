@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FieldListGroupItem = ({label, span, className}) =>{
+const ListGroupItem = ({label, span, className}) =>{
 
     return(       
         <div className={`d-flex justify-content-between ${className}`}>
@@ -11,4 +11,4 @@ const FieldListGroupItem = ({label, span, className}) =>{
     )
 }
 
-export default FieldListGroupItem;
+export default ListGroupItem;

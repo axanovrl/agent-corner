@@ -1,5 +1,5 @@
 import React from "react";
-import FieldListGroupItem from './ListGroupItem';
+import ListGroupItem from './ListGroupItem';
 
 
 const ListBlock = ({className, list, title}) => (
@@ -15,7 +15,7 @@ const ListBlock = ({className, list, title}) => (
                             {list.map((item, index) => {
                                 return (
                                     <div key={index} className={`list-group-item ${className}`}>
-                                        <FieldListGroupItem label={item.label} span={item.span} />
+                                        <ListGroupItem label={item.label} span={item.span} />
                                     </div>
                                 )
                             })}

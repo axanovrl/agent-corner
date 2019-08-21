@@ -3,8 +3,8 @@ import React from 'react';
 const FieldLabel = ({label,p, className}) => {
    return(
         <li>
-            <label className={className}>{label}</label>
-            <p>{p}</p>
+            <label className={`text-secondary ${className}`}>{label}</label>
+            <p className={`text-left ${className}`}>{p}</p>
         </li>
    )
 }
