@@ -34,6 +34,7 @@ padding-right: 5px;
 }
 .form-label{
     font-weight: 700;
+    font-size: 0.85em;
 }
 
 input{
@@ -462,7 +463,11 @@ li{
 }
 
 .mt-new-password{
-    margin-top: 111px;
+    margin-top: 90px;
+}
+
+.mt-focus{
+    margin-top: 0px;
 }
 
 .mt-2{
@@ -482,10 +487,11 @@ li{
 
 .ac-text-small{
     font-size: .8rem;
+   
 }
 
 .button-default{
-    width: 185px;
+    width: 177px;
     height: 50px;
     margin-top: 25px;
 }
@@ -548,4 +554,17 @@ li{
 .btn-spacing-295 {
     padding-right: 29.5px;
     padding-left: 29.5px;
+}
+
+.btn-link{
+    color: #ffb400;
+}
+
+.btn-link:hover{
+    color: #d29606;
+}
+
+.privacy-pol{
+    font-size: 0.95em;
+    text-align: justify;
 }
