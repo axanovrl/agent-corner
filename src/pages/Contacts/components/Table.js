@@ -23,7 +23,6 @@ const Table = ({ className, list }) => {
 							return (
 								COLUMNS.map((jtem, index) => (
 									<td key={index}>
-
 										{jtem.render ? jtem.render(item[jtem.key]) : item[jtem.key]}
 									</td>
 								))
