@@ -11,6 +11,7 @@ import Details from './pages/Details/index';
 import Settings from './pages/Settings/index';
 import Campaigns from './pages/Campaigns/index';
 import CreateCampaign from './pages/CreateCampaigns/index';
+import CreateContacts from './pages/CreateContacts/index';
 import Style from './assets/style/Style.css';
 
 
@@ -27,6 +28,7 @@ class App extends React.Component{
                     </div>
                     <Route path="/contacts" component={Contacts} exact={true}/>
                     <Route path="/contacts:id" component={Details} exact={true}/>
+                    <Route path="/contacts/add" component={CreateContacts} exact={true}/>
                     <Route path="/details" component={Details}/>
                     <Route path="/settings" component={Settings}/>
                     <Route path="/campaigns" component={Campaigns} exact={true}/>
