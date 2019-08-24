@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import NavBar from '../../components/NavBar';
 import Table from './components/Table';
-import { List1 } from './components/const';
+import { LIST_CONTACTS} from './components/const';
 
 const Contacts = () => {
 	return (
@@ -16,7 +16,7 @@ const Contacts = () => {
 				</div>
 				<Link to="contacts/add" className="font-weight-bold add-btn btn btn-primary">+ Create</Link>
 				<div className="mb-2-hf">
-					<Table list={List1} />
+					<Table list={LIST_CONTACTS} />
 				</div>
 			</Container>
 		</React.Fragment>
