@@ -2,13 +2,11 @@ import React from 'react';
 
 import FieldLogin from './components/FieldLogin';
 
-
-
-const index = () =>{
-    return(
-        <FieldLogin/>
-    )
+const Login = () => {
+  return (
+    <FieldLogin />
+  )
 
 }
 
-export default index;
+export default Login;
