@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import NavBar from '../../components/NavBar';
 import TabPanel from './components/TabPanel';
 
-const index = () => {
+const Settings = () => {
 
     return (
         <React.Fragment>
@@ -23,4 +23,4 @@ const index = () => {
 
 }
 
-export default index;
+export default Settings;
