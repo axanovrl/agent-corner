@@ -6,7 +6,7 @@ import ContactInfo from './components/ContactInfo';
 import ListBlock from './components/ListBlock';
 import { List, List1, List2 } from './const';
 
-const index = () => {
+const Details = () => {
 
     return (
         <React.Fragment>
@@ -33,4 +33,4 @@ const index = () => {
     )
 }
 
-export default index;
+export default Details;

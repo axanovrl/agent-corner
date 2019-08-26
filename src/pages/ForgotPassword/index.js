@@ -2,10 +2,10 @@ import React from 'react';
 
 import FieldForgotPassword from './components/FieldForgotPassword';
 
-const index = () =>{
+const ForgotPassword = () =>{
     return(
         <FieldForgotPassword/>
     )
 }
 
-export default index;
+export default ForgotPassword;

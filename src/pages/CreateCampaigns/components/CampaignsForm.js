@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Col} from 'react-bootstrap';
+import {Form, Col, Button} from 'react-bootstrap';
 
 const CampaignsForm = () =>{
     return (
@@ -90,7 +90,7 @@ const CampaignsForm = () =>{
                 <Form.Control type="text" placeholder="Enter your campaign"></Form.Control>   
             </Form.Group>
             <div className="d-flex justify-content-center mt-2-hf">
-             <button type="submit" className="btn-spacing-12 btn-spacing-295 btn btn-primary">Create a Campaign</button>   
+            <Button variant="btn-primary" type="submit">Create Campaign</Button>  
             </div>
         </Form>
             

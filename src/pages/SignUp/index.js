@@ -3,10 +3,10 @@ import React from 'react';
 
 import FieldSignUp from './components/FieldSignUp';
 
-const index = () =>{
+const SignUp = () =>{
     return(
         <FieldSignUp/>
     )
 }
 
-export default index;
+export default SignUp;

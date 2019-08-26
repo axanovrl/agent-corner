@@ -4,11 +4,11 @@ import FieldLogin from './components/FieldLogin';
 
 
 
-const index = () =>{
+const Login = () =>{
     return(
         <FieldLogin/>
     )
 
 }
 
-export default index;
+export default Login;
