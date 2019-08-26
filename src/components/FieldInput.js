@@ -1,14 +1,30 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-const FieldInput = ({type="text", label, className, placeholder,value, p}) =>{
-    
-    return(
-        <div className = {className}>
-            <label>{label}</label>  
-            <p>{p}</p>
-            <input type={type} className={className} placeholder={placeholder} value={value}/>
-        </div>
-    )
-}
+const FieldInput = ({
+  type = "text",
+  label,
+  className,
+  placeholder,
+  p,
+  renderTop,
+}) => (
+  <div className={className}>
+    <div className="d-flex justify-content-between">
+    <label>{label} </label>
+    {renderTop}
+    </div>
+    {p && <p>{p}</p>}
+    <input type={type} placeholder={placeholder} />
+  </div>
+);
 
+FieldInput.propTypes = {
+  type: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  p: PropTypes.string.isRequired,
+  renderTop: PropTypes.element.isRequired,
+};
 export default FieldInput;

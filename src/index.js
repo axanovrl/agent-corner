@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 
-import FieldSignUp from './pages/SignUp/index';
-import FieldLogin from './pages/Login/index';
-import FieldForgotPassword from './pages/ForgotPassword/index'
-import Contacts from './pages/Contacts/index';
-import Details from './pages/Details/index';
-import Settings from './pages/Settings/index';
-import Campaigns from './pages/Campaigns/index';
-import CreateCampaign from './pages/CreateCampaigns/index';
-import CreateContacts from './pages/CreateContacts/index';
+import FieldSignUp from './pages/SignUp';
+import FieldLogin from './pages/Login';
+import FieldForgotPassword from './pages/ForgotPassword'
+import Contacts from './pages/Contacts';
+import Details from './pages/Details';
+import Settings from './pages/Settings';
+import Campaigns from './pages/Campaigns';
+import CreateCampaign from './pages/CreateCampaigns';
+import CreateContacts from './pages/CreateContacts';
 import Style from './assets/style/Style.css';
 
 
