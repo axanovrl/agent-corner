@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-select": "^1.13.10",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-react-app": "^5.0.1",
     "rc-switch": "^1.9.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
@@ -32,5 +34,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2"
   }
 }
