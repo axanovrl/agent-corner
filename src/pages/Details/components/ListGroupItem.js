@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
 const ListGroupItem = ({ label, span, className }) => {
   return (
@@ -6,8 +7,11 @@ const ListGroupItem = ({ label, span, className }) => {
       <label className={`font-weight-bold ${className}`}>{label}</label>
       <span>{span}</span>
     </div>
-
-  )
-}
-
+  );
+};
+ListGroupItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  span: PropTypes.string.isRequired,
+  className: PropTypes.string
+};
 export default ListGroupItem;

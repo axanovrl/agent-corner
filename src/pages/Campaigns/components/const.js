@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const List = [
   {
@@ -8,7 +8,7 @@ export const List = [
     bid: "$10.50",
     budget: "$210.00"
   }
-]
+];
 
 export const Columns = [
   {
@@ -16,11 +16,14 @@ export const Columns = [
   },
   {
     key: "actions",
-    render: (val) =>
-      <div className={`d-flex align-items-center`}>
-        <div className={`oval oval-success`}></div>
+    displayName: "Columns",
+    // eslint-disable-next-line react/display-name
+    render: val => (
+      <div className="d-flex align-items-center">
+        <div className="oval oval-success" />
         {val}
       </div>
+    )
   },
   {
     key: "zipcode"
@@ -31,5 +34,4 @@ export const Columns = [
   {
     key: "budget"
   }
-]
-
+];

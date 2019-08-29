@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import FieldSignUp from './components/FieldSignUp';
+import FieldSignUp from "./components/FieldSignUp";
 
-const SignUp = () =>{
-    return(
-        <FieldSignUp/>
-    )
-}
+const SignUp = () => {
+  return <FieldSignUp />;
+};
 
 export default SignUp;

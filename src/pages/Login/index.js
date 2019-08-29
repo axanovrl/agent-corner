@@ -1,12 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import FieldLogin from './components/FieldLogin';
+import FieldLogin from "./components/FieldLogin";
 
 const Login = () => {
-  return (
-    <FieldLogin />
-  )
-
-}
+  return <FieldLogin />;
+};
 
 export default Login;
