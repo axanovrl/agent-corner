@@ -1,13 +1,12 @@
-import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 
-import NavBar from '../../components/NavBar';
-import ContactInfo from './components/ContactInfo';
-import ListBlock from './components/ListBlock';
-import { List, List1, List2 } from './const';
+import NavBar from "../../components/NavBar";
+import ContactInfo from "./components/ContactInfo";
+import ListBlock from "./components/ListBlock";
+import { List, List1, List2 } from "./const";
 
 const Details = () => {
-
   return (
     <React.Fragment>
       <NavBar />
@@ -30,7 +29,7 @@ const Details = () => {
         </Row>
       </Container>
     </React.Fragment>
-  )
-}
+  );
+};
 
 export default Details;

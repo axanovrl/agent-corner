@@ -1,7 +1,7 @@
 export const List = [
   {
     label: "Property Type",
-    span: "Any Type",
+    span: "Any Type"
   },
 
   {
@@ -23,10 +23,7 @@ export const List = [
     label: "Phone Number",
     span: "+123456789"
   }
-
-
-
-]
+];
 
 export const List1 = [
   {
@@ -42,9 +39,8 @@ export const List1 = [
   {
     label: "Time Frame",
     span: "Any Time"
-  },
-
-]
+  }
+];
 
 export const List2 = [
   {
@@ -65,6 +61,5 @@ export const List2 = [
   {
     label: "Property Type",
     span: "Any Type"
-  },
-
-]
+  }
+];

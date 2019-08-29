@@ -5,12 +5,12 @@ module.exports = {
     node: true
   },
   extends: [
-    'airbnb',
-    'react-app',
-    'prettier'
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   plugins: [
-    'prettier'
+    "prettier",
+    "react"
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -22,6 +22,8 @@ module.exports = {
   },
 
   rules: {
-    'prettier/prettier': ['error']
+    "react/display-name": "off",
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }

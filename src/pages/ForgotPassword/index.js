@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import FieldForgotPassword from './components/FieldForgotPassword';
+import FieldForgotPassword from "./components/FieldForgotPassword";
 
 const ForgotPassword = () => {
-  return (
-    <FieldForgotPassword />
-  )
-}
+  return <FieldForgotPassword />;
+};
 
 export default ForgotPassword;

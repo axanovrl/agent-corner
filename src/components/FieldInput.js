@@ -7,12 +7,12 @@ const FieldInput = ({
   className,
   placeholder,
   p,
-  renderTop,
+  renderTop
 }) => (
   <div className={className}>
     <div className="d-flex justify-content-between">
-    <label>{label} </label>
-    {renderTop}
+      <label htmlFor>{label}</label>
+      {renderTop}
     </div>
     {p && <p>{p}</p>}
     <input type={type} placeholder={placeholder} />
@@ -25,6 +25,6 @@ FieldInput.propTypes = {
   className: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired,
-  renderTop: PropTypes.element.isRequired,
+  renderTop: PropTypes.element.isRequired
 };
 export default FieldInput;

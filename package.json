@@ -7,6 +7,7 @@
     "bootstrap-select": "^1.13.10",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-react-app": "^5.0.1",
+    "prop-types": "^15.7.2",
     "rc-switch": "^1.9.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
@@ -18,7 +19,22 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix",
+    "prettier": "prettier --write src/**/*.js",
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks":{
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
