@@ -1,69 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import { Container, Form, Col, Button } from "react-bootstrap";
 
 import FieldInput from "../../../components/FieldInput";
 
 const FieldSignUp = () => {
   return (
     <Container>
-      <form>
-        <div className="d-flex justify-content-center">
-          <div className="d-flex justify-content-center align-items-center vh-100">
-            <div className="wizard-form">
-              <h2>Create your account</h2>
-              <div className="form-row">
-                <div className="form-group col">
-                  <FieldInput
-                    label="First Name"
-                    className="form-label"
-                    placeholder="Sam"
-                  />
-                </div>
-                <div className="form-group col">
-                  <FieldInput
-                    label="Last Name"
-                    className="form-label"
-                    placeholder="Smith"
-                  />
-                </div>
-              </div>
-              <div className="form-group">
-                <FieldInput
-                  label="Email"
-                  type="email"
-                  className="form-label"
-                  placeholder="sam_smith@gmail.com"
-                />
-              </div>
-              <div className="form-group">
-                <FieldInput
-                  label="Password"
-                  type="password"
-                  className="form-label font-weigh-bold"
-                />
-              </div>
-              <div className="form-group">
-                <FieldInput
-                  label="Confirm Password"
-                  type="password"
-                  className="form-label"
-                />
-              </div>
-              <button type="submit">Sign Up</button>
-              <p>
-                Already have an account?{" "}
-                <Link to="/login">Sign in instead</Link>
-              </p>
-              <hr></hr>
-              <p>
-                By continuing, you agree to our
-                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-              </p>
-            </div>
+      <div className="d-flex justify-content-center">
+        <Form className="auth-form">
+          <h2 className="text-center mb-2-hf">Create your account</h2>
+          <Form.Row>
+            <Form.Group as={Col}>
+              <FieldInput label="First Name" placeholder="Sam" />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <FieldInput label="Last Name" placeholder="Smith" />
+            </Form.Group>
+          </Form.Row>
+          <Form.Group>
+            <FieldInput label="Email" />
+          </Form.Group>
+          <Form.Group>
+            <FieldInput label="Password" type="password" />
+          </Form.Group>
+          <Form.Group>
+            <FieldInput label="Confirm Password" type="password" />
+          </Form.Group>
+          <Link to="/login">
+            {" "}
+            <Button variant="primary" className="mt-2-hf font-weight-bold">
+              Sign Up
+            </Button>
+          </Link>
+          <div className="text-center pt-1-hf pb-2-hf">
+            <span>
+              Already have an account?
+              <Link to="/login" className="text-primary">
+                &nbsp;Sign Instead
+              </Link>
+            </span>
           </div>
-        </div>
-      </form>
+          <div className="text-center pt-2-hf border-top">
+            <span>
+              By continuing, you agree to our&nbsp;
+              <Link to="#">Terms of Use</Link>
+              &nbsp;and&nbsp;
+              <Link to="#">Privacy Policy</Link>
+            </span>
+          </div>
+        </Form>
+      </div>
     </Container>
   );
 };

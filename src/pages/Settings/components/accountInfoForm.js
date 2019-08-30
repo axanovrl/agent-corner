@@ -147,7 +147,12 @@ const AccountInfoForm = () => {
           <Row>
             <Figure className="photo-container">
               <div className="d-flex flex-column">
-                <img src="img/avatar_mini.png" width="140px" height="140px" />
+                <img
+                  src="img/avatar_mini.png"
+                  width="140px"
+                  height="140px"
+                  alt="avatar"
+                />
                 <Button variant="link" className="text-dark">
                   Change a Photo
                 </Button>

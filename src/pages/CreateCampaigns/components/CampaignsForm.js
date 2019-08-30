@@ -1,12 +1,17 @@
 import React from "react";
 import { Form, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import FieldInput from "../../../components/FieldInput";
 
 const CampaignsForm = () => {
   return (
     <Form id="campaigns-form" className="form-default">
       <Form.Group className="p-0">
-        <Form.Label>Location</Form.Label>
-        <Form.Control type="number" placeholder="Enter a city or ZIP Code" />
+        <FieldInput
+          label="Location"
+          placeholder="Enter a city or ZIP Code"
+          type="number"
+        />
       </Form.Group>
       <Form.Row>
         <Col>
@@ -68,7 +73,7 @@ const CampaignsForm = () => {
           <Form.Group>
             <Form.Label>Bid Amount</Form.Label>
             <Form.Control type="number" placeholder="0"></Form.Control>
-            <Form.Text className="text-muted"></Form.Text>
+            <Form.Text className="text-muted">Minimum amount $10.00</Form.Text>
           </Form.Group>
         </Col>
         <Col>
@@ -83,16 +88,18 @@ const CampaignsForm = () => {
         <h2>More about this campaign</h2>
       </div>
       <Form.Group>
-        <Form.Label>Campaign Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your campaign"
-        ></Form.Control>
+        <FieldInput label="Campaign Name" placeholder="Enter your campaign" />
       </Form.Group>
       <div className="d-flex justify-content-center mt-2-hf">
-        <Button variant="btn-primary" type="submit">
-          Create Campaign
-        </Button>
+        <Link to="/campaigns">
+          <Button
+            variant="btn-primary"
+            type="submit"
+            className="btn-spacing-295 form-label"
+          >
+            Create Campaign
+          </Button>
+        </Link>
       </div>
     </Form>
   );

@@ -219,7 +219,7 @@ label{
 }
 
 .border-top{
-    border-top: 1px solid #000000!important;
+    border-top: 1px solid #ced4da!important;
 }
 
 .mb-2{
@@ -568,4 +568,21 @@ li{
 .privacy-pol{
     font-size: 0.95em;
     text-align: justify;
+}
+
+.form-control:focus{
+  border-color: #ffb400;
+  box-shadow: 0 0 0 0.2rem rgba(251, 176, 24, .25);
+}
+
+.text-primary {
+  color: #ffb400!important;
+}
+a.text-primary:hover{
+  color: #d29606!important;
+}
+
+.btn-spacing-295 {
+  padding-right: 29.5px;
+  padding-left: 29.5px;
 }

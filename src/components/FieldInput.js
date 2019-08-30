@@ -1,22 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Form } from "react-bootstrap";
 
 const FieldInput = ({
   type = "text",
   label,
-  className,
   placeholder,
-  p,
-  renderTop
+  renderTop,
+  value
 }) => (
-  <div className={className}>
+  <Form>
     <div className="d-flex justify-content-between">
-      <label htmlFor>{label}</label>
+      <Form.Label htmlFor>{label}</Form.Label>
       {renderTop}
     </div>
-    {p && <p>{p}</p>}
-    <input type={type} placeholder={placeholder} />
-  </div>
+    <Form.Control
+      as="input"
+      type={type}
+      placeholder={placeholder}
+      value={value}
+    />
+  </Form>
 );
 
 FieldInput.propTypes = {
@@ -24,7 +28,7 @@ FieldInput.propTypes = {
   label: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  p: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
   renderTop: PropTypes.element.isRequired
 };
 export default FieldInput;

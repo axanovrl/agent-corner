@@ -18,7 +18,7 @@ const ContactInfo = () => {
       <div className="container-avatar-info border-bottom">
         <div className="d-flex justify-content-center">
           <figure className="text-center">
-            <img src="/img/avatar_mini.png" className="avatar"></img>
+            <img src="/img/avatar_mini.png" className="avatar" alt="avatar" />
             <figcaption className="name-with-avatar">Jeffery Fox</figcaption>
           </figure>
         </div>

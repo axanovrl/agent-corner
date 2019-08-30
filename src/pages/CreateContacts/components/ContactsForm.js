@@ -1,5 +1,8 @@
 import React from "react";
-import { Form, Col } from "react-bootstrap";
+import { Form, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import FieldInput from "../../../components/FieldInput";
 
 const ContactsForm = () => {
   return (
@@ -7,36 +10,37 @@ const ContactsForm = () => {
       <Form.Row>
         <Col>
           <Form.Group>
-            <Form.Label>First Name</Form.Label>
-            <Form.Control type="text" placeholder="Sam"></Form.Control>
+            <FieldInput label="First Name" placeholder="Sam" type="text" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Label>Last Name</Form.Label>
-            <Form.Control type="text" placeholder="Smith"></Form.Control>
+            <FieldInput label="Last Name" placeholder="Smith" type="text" />
           </Form.Group>
         </Col>
       </Form.Row>
       <Form.Group>
-        <Form.Label>Zip Code</Form.Label>
-        <Form.Control type="text" placeholder="123456"></Form.Control>
+        <FieldInput label="Zip Code" placeholder="123456" type="text" />
       </Form.Group>
       <Form.Group>
-        <Form.Label>City</Form.Label>
-        <Form.Control type="text" placeholder="San Francisco"></Form.Control>
+        <FieldInput label="City" placeholder="San Francisco" type="text" />
       </Form.Group>
       <Form.Group>
-        <Form.Label>State</Form.Label>
-        <Form.Control type="text" placeholder="CA"></Form.Control>
+        <FieldInput label="State" placeholder="CA" type="text" />
+      </Form.Group>
+      <Form.Group>
+        <FieldInput
+          label="Estimated Price"
+          type="text"
+          placeholder="$450,000-$500,000"
+        ></FieldInput>
       </Form.Group>
       <div className="d-flex justify-content-center mt-2-hf">
-        <button
-          type="submit"
-          className="btn-spacing-12 btn-spacing-295 btn btn-primary"
-        >
-          Create a Contact
-        </button>
+        <Link to="/contacts">
+          <Button variant="primary" className="font-weight-bold">
+            Create a Contact
+          </Button>
+        </Link>
       </div>
     </Form>
   );
