@@ -1,7 +1,10 @@
 import React from "react";
 import { Form, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 import FieldInput from "../../../components/FieldInput";
+import Select from "../../../components/Select";
+import { Objective, PropertyType, Min, Max } from "./const";
 
 const CampaignsForm = () => {
   return (
@@ -16,55 +19,24 @@ const CampaignsForm = () => {
       <Form.Row>
         <Col>
           <Form.Group>
-            <Form.Label>Property Type</Form.Label>
-            <Form.Control as="select">
-              <option>Any Types</option>
-            </Form.Control>
+            <Select options={PropertyType} label="Property Type" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Label>Objective</Form.Label>
-            <Form.Control as="select">
-              <option>Buyers</option>
-              <option>Sellers</option>
-            </Form.Control>
+            <Select options={Objective} label="Objective" />
           </Form.Group>
         </Col>
       </Form.Row>
       <Form.Row>
         <Col>
           <Form.Group>
-            <Form.Label>Min Property Price</Form.Label>
-            <Form.Control as="select">
-              <option>$0</option>
-              <option>$50,000</option>
-              <option>$100,000</option>
-              <option>$150,000</option>
-              <option>$200,000</option>
-              <option>$250,000</option>
-              <option>$300,000</option>
-              <option>$350,000</option>
-              <option>$400,000</option>
-              <option>$500,000</option>
-            </Form.Control>
+            <Select options={Min} label="Min Property Price" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Label>Max Property Price</Form.Label>
-            <Form.Control as="select">
-              <option>$0</option>
-              <option>$50,000</option>
-              <option>$100,000</option>
-              <option>$150,000</option>
-              <option>$200,000</option>
-              <option>$250,000</option>
-              <option>$300,000</option>
-              <option>$350,000</option>
-              <option>$400,000</option>
-              <option>$500,000</option>
-            </Form.Control>
+            <Select options={Max} label="Max Property Price" />
           </Form.Group>
         </Col>
       </Form.Row>
@@ -104,4 +76,5 @@ const CampaignsForm = () => {
     </Form>
   );
 };
+
 export default CampaignsForm;

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const FieldLabel = ({ label, p, className }) => {
+const Label = ({ label, p, className }) => {
   return (
     <li>
       <label className={`text-secondary ${className}`}>{label}</label>
@@ -9,10 +9,10 @@ const FieldLabel = ({ label, p, className }) => {
     </li>
   );
 };
-FieldLabel.propTypes = {
+Label.propTypes = {
   label: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired
+  className: PropTypes.string
 };
 
-export default FieldLabel;
+export default Label;

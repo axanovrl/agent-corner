@@ -11,7 +11,7 @@ const FieldInput = ({
 }) => (
   <Form.Group>
     <div className="d-flex justify-content-between">
-      <Form.Label htmlFor>{label}</Form.Label>
+      <Form.Label>{label}</Form.Label>
       {renderTop}
     </div>
     <Form.Control
@@ -24,11 +24,11 @@ const FieldInput = ({
 );
 
 FieldInput.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   label: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  renderTop: PropTypes.element.isRequired
+  className: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.string,
+  renderTop: PropTypes.element
 };
 export default FieldInput;

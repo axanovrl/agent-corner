@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import FieldLabel from "./Label";
+import Label from "./Label";
 
 const ContactInfo = () => {
   return (
@@ -29,10 +29,10 @@ const ContactInfo = () => {
           <h6 className="ac-text-16 font-weight-bold">About</h6>
         </div>
         <ul className="list-about-user">
-          <FieldLabel label="Email" p="jfox@gmail.com" />
-          <FieldLabel label="Objective" p="Objective" />
-          <FieldLabel label="Lifecycle Stage" p="New" />
-          <FieldLabel label="Contact Status" p="New" />
+          <Label label="Email" p="jfox@gmail.com" />
+          <Label label="Objective" p="Objective" />
+          <Label label="Lifecycle Stage" p="New" />
+          <Label label="Contact Status" p="New" />
         </ul>
       </div>
     </div>

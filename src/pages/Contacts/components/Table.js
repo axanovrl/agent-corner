@@ -38,7 +38,7 @@ const Table = ({ className, list }) => {
   );
 };
 Table.propTypes = {
-  className: PropTypes.string.isRequired,
-  list: PropTypes.element.isRequired
+  className: PropTypes.string,
+  list: PropTypes.array.isRequired
 };
 export default Table;
