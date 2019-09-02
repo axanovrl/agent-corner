@@ -9,7 +9,7 @@ const FieldInput = ({
   renderTop,
   value
 }) => (
-  <Form>
+  <Form.Group>
     <div className="d-flex justify-content-between">
       <Form.Label htmlFor>{label}</Form.Label>
       {renderTop}
@@ -20,7 +20,7 @@ const FieldInput = ({
       placeholder={placeholder}
       value={value}
     />
-  </Form>
+  </Form.Group>
 );
 
 FieldInput.propTypes = {
