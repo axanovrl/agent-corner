@@ -20,6 +20,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="d-flex justify-content-center">
           <Route exact path="/" component={FieldSignUp} />
+          <Route exact path="/sign-up" component={FieldSignUp} />
           <Route path="/login" component={FieldLogin} />
           <Route path="/forgot-password" component={FieldForgotPassword} />
         </div>
