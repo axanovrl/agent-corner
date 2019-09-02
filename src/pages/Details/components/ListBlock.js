@@ -24,7 +24,7 @@ const ListBlock = ({ className, list, title }) => (
 );
 ListBlock.propTypes = {
   className: PropTypes.string,
-  list: PropTypes.element.isRequired,
+  list: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired
 };
 export default ListBlock;

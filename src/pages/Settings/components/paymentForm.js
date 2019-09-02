@@ -1,6 +1,8 @@
 import React from "react";
 import { Form, Col, Row, Button } from "react-bootstrap";
 
+import Select from "../../../components/Select";
+import { CreditCard } from "./const";
 const paymentForm = () => {
   return (
     <Form className="form-default">
@@ -79,15 +81,7 @@ const paymentForm = () => {
           <Form.Row>
             <Col className="mr-1">
               <Form.Group className="p-0">
-                <Form.Label>Payment Default</Form.Label>
-                <Form.Control as="select">
-                  <option>****5679</option>
-                  <option>****9921</option>
-                  <option>****5470</option>
-                  <option>****1239</option>
-                  <option>****8546</option>
-                  <option>****2975</option>
-                </Form.Control>
+                <Select options={CreditCard} label="Payment Default" />
                 <span className="text-muted">
                   While the campaign is active, Agent&apos;s Corner will auto
                   charge your account on file to keep the campaign funded. If

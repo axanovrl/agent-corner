@@ -6,8 +6,8 @@ const DropdownNav = () => {
     <>
       <div className="dropdown">
         <Link
+          to="#"
           className="dropdown-toggle nav-link"
-          href="#"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"

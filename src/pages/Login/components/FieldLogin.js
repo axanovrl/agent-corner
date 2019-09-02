@@ -2,50 +2,52 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import FieldInput from "../../../components/FieldInput";
-import { Button } from "react-bootstrap";
+import { Container, Button, Form } from "react-bootstrap";
 
 const FieldLogin = () => {
   return (
-    <div className="container">
+    <Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
-        <form className="auth-form">
+        <Form className="auth-form">
           <div className="d-flex justify-content-center mb-3">
             <img src="/img/Logo.png" className="ac-logo" alt="logo" />
           </div>
-          <div className="form-group">
-            <FieldInput className="form-label" label="Email" />
-          </div>
-          <div className="form-group">
+          <Form.Group>
+            <FieldInput label="Email" />
+          </Form.Group>
+          <Form.Group>
             <FieldInput
               label="Password"
-              className="form-label"
+              type="password"
               renderTop={
-                <Link to="forgot-password" className="text-dark">
+                <Link to="/forgot-password" className="text-dark form-label">
                   Forgot Password
                 </Link>
               }
             />
-          </div>
-          <Button variant="btn-primary" className="font-weight-bold">
-            Log in
-          </Button>
+          </Form.Group>
+          <Link to="/campaigns">
+            <Button variant="primary" className="mt-2-hf font-weight-bold">
+              Log in
+            </Button>
+          </Link>
           <div className="text-center pt-1-hf pb-2-hf">
             <span>
-              Don&apos;t have an account?
-              <Link to="/sign-up"> Sign up</Link>
+              Don&apos;t have an account
+              <Link to="/sign-up">&nbsp;Sign up</Link>
             </span>
           </div>
           <div className="text-center pt-2-hf border-top">
             <span>
-              By continuing, you agree to our
-              <Link to="/terms"> Terms of Use </Link>
-              and
-              <Link to="/privacy"> Privacy Policy</Link>
+              By continuing, you agree to our&nbsp;
+              <Link to="#">Terms of Use</Link>
+              &nbsp;and&nbsp;
+              <Link to="#">Privacy Policy</Link>
             </span>
           </div>
-        </form>
+        </Form>
       </div>
-    </div>
+    </Container>
   );
 };
 

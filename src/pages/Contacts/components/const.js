@@ -55,12 +55,10 @@ export const LIST_CONTACTS = [
 export const COLUMNS = [
   {
     key: "photo",
-    // eslint-disable-next-line react/display-name
-    render: val => <img width="140" height="80" src={val} alt="image" />
+    render: val => <img width="140" height="80" src={val} alt="house" />
   },
   {
     key: "name",
-    // eslint-disable-next-line react/display-name
     render: val => (
       <Link to="/details" className="text-dark text-underline">
         {val}
