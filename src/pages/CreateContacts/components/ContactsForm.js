@@ -9,32 +9,20 @@ const ContactsForm = () => {
     <Form id="campaigns-form" className="form-default">
       <Form.Row>
         <Col>
-          <Form.Group>
-            <FieldInput label="First Name" placeholder="Sam" type="text" />
-          </Form.Group>
+          <FieldInput label="First Name" placeholder="Sam" type="text" />
         </Col>
         <Col>
-          <Form.Group>
-            <FieldInput label="Last Name" placeholder="Smith" type="text" />
-          </Form.Group>
+          <FieldInput label="Last Name" placeholder="Smith" type="text" />
         </Col>
       </Form.Row>
-      <Form.Group>
-        <FieldInput label="Zip Code" placeholder="123456" type="text" />
-      </Form.Group>
-      <Form.Group>
-        <FieldInput label="City" placeholder="San Francisco" type="text" />
-      </Form.Group>
-      <Form.Group>
-        <FieldInput label="State" placeholder="CA" type="text" />
-      </Form.Group>
-      <Form.Group>
-        <FieldInput
-          label="Estimated Price"
-          type="text"
-          placeholder="$450,000-$500,000"
-        ></FieldInput>
-      </Form.Group>
+      <FieldInput label="Zip Code" placeholder="123456" type="text" />
+      <FieldInput label="City" placeholder="San Francisco" type="text" />
+      <FieldInput label="State" placeholder="CA" type="text" />
+      <FieldInput
+        label="Estimated Price"
+        type="text"
+        placeholder="$450,000-$500,000"
+      ></FieldInput>
       <div className="d-flex justify-content-center mt-2-hf">
         <Link to="/contacts">
           <Button variant="primary" className="font-weight-bold">

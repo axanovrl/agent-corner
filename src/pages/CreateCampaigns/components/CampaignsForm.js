@@ -9,35 +9,25 @@ import { Objective, PropertyType, Min, Max } from "./const";
 const CampaignsForm = () => {
   return (
     <Form id="campaigns-form" className="form-default">
-      <Form.Group className="p-0">
-        <FieldInput
-          label="Location"
-          placeholder="Enter a city or ZIP Code"
-          type="number"
-        />
-      </Form.Group>
+      <FieldInput
+        label="Location"
+        placeholder="Enter a city or ZIP Code"
+        type="number"
+      />
       <Form.Row>
         <Col>
-          <Form.Group>
-            <Select options={PropertyType} label="Property Type" />
-          </Form.Group>
+          <Select options={PropertyType} label="Property Type" />
         </Col>
         <Col>
-          <Form.Group>
-            <Select options={Objective} label="Objective" />
-          </Form.Group>
+          <Select options={Objective} label="Objective" />
         </Col>
       </Form.Row>
       <Form.Row>
         <Col>
-          <Form.Group>
-            <Select options={Min} label="Min Property Price" />
-          </Form.Group>
+          <Select options={Min} label="Min Property Price" />
         </Col>
         <Col>
-          <Form.Group>
-            <Select options={Max} label="Max Property Price" />
-          </Form.Group>
+          <Select options={Max} label="Max Property Price" />
         </Col>
       </Form.Row>
       <Form.Row>
@@ -59,9 +49,7 @@ const CampaignsForm = () => {
       <div className="mb-2-hf">
         <h2>More about this campaign</h2>
       </div>
-      <Form.Group>
-        <FieldInput label="Campaign Name" placeholder="Enter your campaign" />
-      </Form.Group>
+      <FieldInput label="Campaign Name" placeholder="Enter your campaign" />
       <div className="d-flex justify-content-center mt-2-hf">
         <Link to="/campaigns">
           <Button
