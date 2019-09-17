@@ -1,37 +1,82 @@
 import React from "react";
 import { Form, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Field, reduxForm } from "redux-form";
+import PropTypes from "prop-types";
 
 import FieldInput from "../../../components/FieldInput";
+import { required } from "../../../utils/validation";
 
-const ContactsForm = () => {
+const ContactsForm = props => {
+  const { handleSubmit } = props;
   return (
-    <Form id="campaigns-form" className="form-default">
+    <Form id="campaigns-form" className="form-default" onSubmit={handleSubmit}>
       <Form.Row>
         <Col>
-          <FieldInput label="First Name" placeholder="Sam" type="text" />
+          <Field
+            name="firstName"
+            label="First Name"
+            component={FieldInput}
+            placeholder="Sam"
+            type="text"
+            validate={required}
+          />
         </Col>
         <Col>
-          <FieldInput label="Last Name" placeholder="Smith" type="text" />
+          <Field
+            name="lastName"
+            label="Last Name"
+            component={FieldInput}
+            placeholder="Smith"
+            type="text"
+            validate={required}
+          />
         </Col>
       </Form.Row>
-      <FieldInput label="Zip Code" placeholder="123456" type="text" />
-      <FieldInput label="City" placeholder="San Francisco" type="text" />
-      <FieldInput label="State" placeholder="CA" type="text" />
-      <FieldInput
+      <Field
+        name="zipCode"
+        label="Zip Code"
+        component={FieldInput}
+        placeholder="123456"
+        type="text"
+        validate={required}
+      />
+      <Field
+        name="city"
+        label="City"
+        component={FieldInput}
+        placeholder="San Francisco"
+        type="text"
+        validate={required}
+      />
+      <Field
+        name="state"
+        label="State"
+        component={FieldInput}
+        placeholder="CA"
+        type="text"
+        validate={required}
+      />
+      <Field
+        name="estimatedPrice"
         label="Estimated Price"
+        component={FieldInput}
         type="text"
         placeholder="$450,000-$500,000"
-      ></FieldInput>
+        validate={required}
+      />
       <div className="d-flex justify-content-center mt-2-hf">
-        <Link to="/contacts">
-          <Button variant="primary" className="font-weight-bold">
-            Create a Contact
-          </Button>
-        </Link>
+        <Button variant="primary" className="font-weight-bold">
+          Create a Contact
+        </Button>
       </div>
     </Form>
   );
 };
 
-export default ContactsForm;
+ContactsForm.propTypes = {
+  handleSubmit: PropTypes.func
+};
+
+export default reduxForm({
+  form: "ContactsForm"
+})(ContactsForm);

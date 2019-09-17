@@ -1,11 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Button } from "react-bootstrap";
+import PropTypes from "prop-types";
 
 import NavBar from "../../components/NavBar";
 import ContactsForm from "./components/ContactsForm";
 
-const CreateContacts = () => {
+const CreateContacts = ({ history }) => {
+  const handleSubmit = () => {
+    history.push("/contacts");
+  };
   return (
     <React.Fragment>
       <NavBar />
@@ -16,13 +19,17 @@ const CreateContacts = () => {
         <hr></hr>
         <div className="d-flex justify-content-center">
           <div className="position-relative bg-white panel-form border p-2">
-            <button id="back" type="button" className="rounded-0 btn btn-dark">
-              <Link to="/contacts" className="text-white">
-                Back
-              </Link>
-            </button>
+            <Button
+              variant="btn-dark"
+              id="back"
+              type="button"
+              className="rounded-0 btn btn-dark"
+              onClick={handleSubmit}
+            >
+              Back
+            </Button>
             <div className="d-flex justify-content-center">
-              <ContactsForm />
+              <ContactsForm onSubmit={handleSubmit} />
             </div>
           </div>
         </div>
@@ -31,4 +38,7 @@ const CreateContacts = () => {
   );
 };
 
+CreateContacts.propTypes = {
+  history: PropTypes.func
+};
 export default CreateContacts;
