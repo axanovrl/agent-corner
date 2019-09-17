@@ -39,6 +39,6 @@ const CreateContacts = ({ history }) => {
 };
 
 CreateContacts.propTypes = {
-  history: PropTypes.func
+  history: PropTypes.object
 };
 export default CreateContacts;

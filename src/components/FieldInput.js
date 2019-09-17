@@ -8,7 +8,12 @@ const FieldInput = ({ input, label, meta, renderTop, ...rest }) => (
       {label && <Form.Label>{label}</Form.Label>}
       {renderTop}
     </div>
-    <Form.Control isInvalid={meta.error} as="input" {...input} {...rest} />
+    <Form.Control
+      isInvalid={meta.touched && meta.error}
+      as="input"
+      {...input}
+      {...rest}
+    />
     {meta.touched &&
       (meta.error && (
         <Form.Control.Feedback type="invalid">

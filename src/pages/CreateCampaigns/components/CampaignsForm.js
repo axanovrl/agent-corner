@@ -73,6 +73,7 @@ const CampaignsForm = props => {
           variant="btn-primary"
           type="submit"
           className="btn-spacing-295 form-label"
+          onClick={handleSubmit}
         >
           Create Campaign
         </Button>
