@@ -18,8 +18,8 @@ const FieldSignUp = props => {
   return (
     <Container>
       <div className="d-flex justify-content-center">
-        <Form className="auth-form" onSubmit={handleSubmit}>
-          <h2 className="text-center mb-2-hf">Create your account</h2>
+        <Form className="wizard-form" onSubmit={handleSubmit}>
+          <h2 className="text-center mb-2-hf">Create Your Account</h2>
           <Row>
             <Col>
               <Field
@@ -65,7 +65,6 @@ const FieldSignUp = props => {
             type="submit"
             variant="primary"
             className="mt-2-hf font-weight-bold"
-            onClick={handleSubmit}
           >
             Sign Up
           </Button>

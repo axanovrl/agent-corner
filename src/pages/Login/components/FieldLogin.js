@@ -13,7 +13,7 @@ const FieldLogin = props => {
     <Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Form className="auth-form" onSubmit={handleSubmit}>
-          <div className="d-flex justify-content-center mb-3">
+          <div className="d-flex justify-content-center mb-2-hf">
             <img src="/img/Logo.png" className="ac-logo" alt="logo" />
           </div>
           <Field
@@ -40,10 +40,14 @@ const FieldLogin = props => {
             type="submit"
             variant="primary"
             className="mt-2-hf font-weight-bold"
-            onClick={handleSubmit}
           >
             Log in
           </Button>
+          <Form.Check
+            type="checkbox"
+            label="Keep me sign in"
+            className="mt-2"
+          />
           <div className="text-center pt-1-hf pb-2-hf">
             <span>
               Don&apos;t have an account

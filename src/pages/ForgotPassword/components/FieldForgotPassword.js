@@ -12,11 +12,11 @@ const FieldForgotPassword = props => {
   return (
     <Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
-        <Form className="auth-form">
+        <Form className="auth-form" onSubmit={handleSubmit}>
           <div className="d-flex justify-content-center mb-2">
             <img src="/img/Logo.png" className="ac-logo" alt="logo" />
           </div>
-          <h2 className="text center mb-2-hf">Reset your password</h2>
+          <h2 className="text center mb-2-hf">Reset Your Password</h2>
           <Field
             name="email"
             label="Email Address"
@@ -32,17 +32,16 @@ const FieldForgotPassword = props => {
             type="sumbit"
             variant="primary"
             className="mt-2-hf font-weight-bold"
-            onClick={handleSubmit}
           >
             Submit
           </Button>
-          <div className="text-center pt-1-hf pb-2-hf">
-            <span>
-              Go back to
-              <Link to="/login"> Log in</Link>
-            </span>
-          </div>
         </Form>
+        <div className="text-center pt-1-hf pb-2-hf">
+          <span>
+            Go back to
+            <Link to="/login"> Log in</Link>
+          </span>
+        </div>
       </div>
     </Container>
   );
