@@ -1,38 +1,74 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Form, Col, Button } from "react-bootstrap";
+import { Container, Form, Button, Col, Row } from "react-bootstrap";
+import { Field, reduxForm } from "redux-form";
+import {
+  required,
+  maxLength15,
+  minLength2,
+  email,
+  minLengthPassword8
+} from "../../../utils/validation";
+import PropTypes from "prop-types";
 
 import FieldInput from "../../../components/FieldInput";
 
-const FieldSignUp = () => {
+const FieldSignUp = props => {
+  const { handleSubmit } = props;
   return (
     <Container>
       <div className="d-flex justify-content-center">
-        <Form className="auth-form">
+        <Form className="auth-form" onSubmit={handleSubmit}>
           <h2 className="text-center mb-2-hf">Create your account</h2>
-          <Form.Row>
-            <Form.Group as={Col}>
-              <FieldInput label="First Name" placeholder="Sam" />
-            </Form.Group>
-            <Form.Group as={Col}>
-              <FieldInput label="Last Name" placeholder="Smith" />
-            </Form.Group>
-          </Form.Row>
-          <Form.Group>
-            <FieldInput label="Email" />
-          </Form.Group>
-          <Form.Group>
-            <FieldInput label="Password" type="password" />
-          </Form.Group>
-          <Form.Group>
-            <FieldInput label="Confirm Password" type="password" />
-          </Form.Group>
-          <Link to="/login">
-            {" "}
-            <Button variant="primary" className="mt-2-hf font-weight-bold">
-              Sign Up
-            </Button>
-          </Link>
+          <Row>
+            <Col>
+              <Field
+                name="firstName"
+                label="First Name"
+                component={FieldInput}
+                placeholder="Sam"
+                validate={[required, maxLength15, minLength2]}
+              />
+            </Col>
+            <Col>
+              <Field
+                name="lastName"
+                label="Last Name"
+                component={FieldInput}
+                placeholder="Smith"
+                validate={[required, maxLength15, minLength2]}
+              />
+            </Col>
+          </Row>
+          <Field
+            name="email"
+            label="Email"
+            component={FieldInput}
+            validate={[email, required]}
+          />
+          <Field
+            name="password"
+            label="Password"
+            type="password"
+            component={FieldInput}
+            validate={[minLengthPassword8, required]}
+          />
+          <Field
+            name="confirmPassword"
+            label="Confirm Password"
+            type="password"
+            component={FieldInput}
+            validate={[minLengthPassword8, required]}
+          />
+
+          <Button
+            type="submit"
+            variant="primary"
+            className="mt-2-hf font-weight-bold"
+            onClick={handleSubmit}
+          >
+            Sign Up
+          </Button>
           <div className="text-center pt-1-hf pb-2-hf">
             <span>
               Already have an account?
@@ -55,4 +91,10 @@ const FieldSignUp = () => {
   );
 };
 
-export default FieldSignUp;
+FieldSignUp.propTypes = {
+  handleSubmit: PropTypes.func
+};
+
+export default reduxForm({
+  form: "FieldSignUp"
+})(FieldSignUp);
