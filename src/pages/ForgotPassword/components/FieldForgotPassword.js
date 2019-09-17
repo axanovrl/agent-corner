@@ -35,13 +35,13 @@ const FieldForgotPassword = props => {
           >
             Submit
           </Button>
+          <div className="text-center pt-1-hf pb-2-hf">
+            <span>
+              Go back to
+              <Link to="/login"> Log in</Link>
+            </span>
+          </div>
         </Form>
-        <div className="text-center pt-1-hf pb-2-hf">
-          <span>
-            Go back to
-            <Link to="/login"> Log in</Link>
-          </span>
-        </div>
       </div>
     </Container>
   );
