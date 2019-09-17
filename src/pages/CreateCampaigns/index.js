@@ -41,6 +41,6 @@ const CreateCampaigns = ({ history }) => {
   );
 };
 CreateCampaigns.propTypes = {
-  history: PropTypes.func
+  history: PropTypes.object
 };
 export default CreateCampaigns;

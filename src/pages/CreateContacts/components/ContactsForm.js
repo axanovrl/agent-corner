@@ -65,7 +65,11 @@ const ContactsForm = props => {
         validate={required}
       />
       <div className="d-flex justify-content-center mt-2-hf">
-        <Button variant="primary" className="font-weight-bold">
+        <Button
+          variant="primary"
+          className="font-weight-bold"
+          onClick={handleSubmit}
+        >
           Create a Contact
         </Button>
       </div>
